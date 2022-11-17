@@ -7,33 +7,37 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
     <!--Шапка сайту-->
     <header class="header">
-
-        <!--Навігація-->
-        <nav class="header-nav">
-            <a href="./index.html" class="header-logo link">
-                <span class="accent">Web</span>Studio
-            </a>
-            <ul class="header-nav-list list">
-                <li class="header-nav-item"><a class="header-link current link" href="./index.html">Студія</a></li>
-                <li class="header-nav-item"><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
-                <li class="header-nav-item"><a class="header-link link" href="">Контакти</a></li>
+        <div class="container">
+            <!--Навігація-->
+            <nav class="header-nav">
+                <a href="./index.html" class="header-logo link">
+                    <span class="accent">Web</span>Studio
+                </a>
+                <ul class="header-nav-list list">
+                    <li class="item"><a class="header-link current link" href="./index.html">Студія</a></li>
+                    <li class="item"><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="item"><a class="header-link link" href="">Контакти</a></li>
+                </ul>
+            </nav>
+            
+            <!--Контакти-->
+            <ul class="header-contact-list list">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="header-contact link">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a href="tel:+380961111111" class="header-contact link">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="header-contact-list list">
-            <li>
-                <a href="mailto:info@devstudio.com" class="header-contact link">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111" class="header-contact link">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
     </header>
 
     <!--Main-->
@@ -43,42 +47,45 @@
         
         <section class="section-hero">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn">Замовити послугу</button>
+            <button type="button" class="hero-btn btn">Замовити послугу</button>
         </section>
        
         <section class="section-properties">
+            <div class="container">
+                 <!--Прихований заголовок-->
+                <h2 class="visually-hidden">Необхідні властивості характеру</h2>
 
-            <!--Прихований заголовок-->
-            <h2 class="visually-hidden">Необхідні властивості характеру</h2>
-
-            <ul class="properties-list list">
-                <li>
-                    <h3 class="properties-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="properties-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li>
-                    <h3 class="properties-title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="properties-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li>
-                    <h3 class="properties-title">ПЛАНУВАННЯ</h3>
-                    <p class="properties-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li>
-                    <h3 class="properties-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="properties-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
+                <ul class="properties-list list">
+                    <li>
+                        <h3 class="properties-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="properties-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    </li>
+                    <li>
+                        <h3 class="properties-title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="properties-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
+                    <li>
+                        <h3 class="properties-title">ПЛАНУВАННЯ</h3>
+                        <p class="properties-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+                    <li>
+                        <h3 class="properties-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="properties-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="section-employment">
-            <h2 class="employment-title">Чим ми займаємося</h2>
-            <ul class="employment-list list">
-                <li class="employment-item"><img src="./images/box_1.jpg" alt="картинка алгоритму" width="370" height="294"></li>
-                <li class="employment-item"><img src="./images/box_2.jpg" alt="картинка схеми сайту" width="370" height="294"></li>
-                <li class="employment-item"><img src="./images/box_2.jpg" alt="картинка схеми сайту" width="370" height="294"></li>
-                <li class="employment-item"><img src="./images/box_3.jpg" alt="картинка вибору кольору" width="370" height="294"></li>
-            </ul>
+            <div class="container">
+                <h2 class="employment-title">Чим ми займаємося</h2>
+                <ul class="employment-list list">
+                    <li class="employment-item"><img src="./images/box_1.jpg" alt="картинка алгоритму" width="370" height="294"></li>
+                    <li class="employment-item"><img src="./images/box_2.jpg" alt="картинка схеми сайту" width="370" height="294"></li>
+                    <li class="employment-item"><img src="./images/box_2.jpg" alt="картинка схеми сайту" width="370" height="294"></li>
+                    <li class="employment-item"><img src="./images/box_3.jpg" alt="картинка вибору кольору" width="370" height="294"></li>
+                </ul>
+            </div>
         </section>
 
         <section class="section-team">
