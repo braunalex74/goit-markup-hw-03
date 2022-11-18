@@ -163,6 +163,8 @@ body {
 }
 
 .properties-list {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -177,6 +179,12 @@ body {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
+.properties-list .item {
+    width: 270px;
+}
+.properties-list .item + .item {
+    margin-left: 30px;
+}    
 .properties-text {
     margin-top: 0;
     margin-bottom: 0;
@@ -187,6 +195,11 @@ body {
 .section-employment {
     margin-top: 0;
     margin-bottom: 95px;
+
+    text-align: center;
+}
+.employment-list {
+    display: flex;
 }
 .employment-list > .employment-item + .employment-item {
     margin-left: 30px;
@@ -208,10 +221,15 @@ body {
     padding-top: 95px;
     padding-bottom: 95px;
 
+    text-align: center;
+
     background-color: #F5F4FA;
 }
 .team-list > .team-item + .team-item {
     margin-left: 30px;
+}
+.team-list {
+    display: flex;
 }
 .team-list > .team-item {
     background: #FFFFFF;
@@ -252,6 +270,12 @@ body {
     margin-top: 95px;
     margin-bottom: 95px;
 }
+.portfolio-list {
+    display: flex;
+}
+.portfolio-list .item + .item {
+    margin-left: 30px;  
+}
 .portfolio-btn {
     padding: 6px 22px;
     margin-top: 0;
@@ -269,16 +293,13 @@ body {
     color: var(--primary-white-color);
     background: var(--accent-color);
 }
-.portfolio-list > .item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 30px;   
-}
-.portfolio-list {
+.portfolio-img {
     display: flex;
+    flex-wrap: wrap;
 }
-.portfolio-link > .img {
-    margin-top: 0;
+.portfolio-img > .item + .item {
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 .portfolio-title {
     margin-top: 0;
