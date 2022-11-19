@@ -4,6 +4,7 @@
     --accent-color:#2196F3;
     --primary-white-color:#ffffff;
     --background-color: #2F303A;
+    --background-color_2: #F5F4FA;
 }
 
 .container {
@@ -28,16 +29,6 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
 }
  .accent {
     color: var(--accent-color);
@@ -129,38 +120,43 @@ body {
 
 /*---------------HERO---------------*/
 .section-hero {
-    margin-bottom: 100px;
-
     background: var(--background-color);
-    text-align: center;
 }
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
 }
 .hero-btn {
-    min-width: 130px;
-    height: 50px;
+    padding: 10px 32px;
 
     font-weight: 700;
-    line-height: 1.88;
+    font-size: 16px;
+    line-height: 30px;
     letter-spacing: 0.06em;
+    
     color: var(--primary-white-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    color: orange;
+    color: #000000;
 }
 
 /*---------------PROPERTIES---------------*/
 .section-properties {
-    margin-top: 0;
-    margin-bottom: 95px;
+    margin: 0;
+    padding-top: 94px;
 }
-
 .properties-list {
     display: flex;
     flex-wrap: wrap;
@@ -192,16 +188,24 @@ body {
 
 /*---------------EMPLOYMENT---------------*/
 .section-employment {
-    margin-top: 0;
-    margin-bottom: 95px;
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     text-align: center;
 }
 .employment-list {
     display: flex;
+    width: 100%;
+    height: auto;
 }
 .employment-list > .employment-item + .employment-item {
     margin-left: 30px;
+}
+.employment-list > .employment-item {
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 .employment-title,
 .team-title {
@@ -222,7 +226,7 @@ body {
 
     text-align: center;
 
-    background-color: #F5F4FA;
+    background-color: var(--background-color_2);
 }
 .team-list > .team-item + .team-item {
     margin-left: 30px;
@@ -231,14 +235,14 @@ body {
     display: flex;
 }
 .team-list > .team-item {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
     width: 270px;
     height: 368px;
     left: 215px;
     top: 1632px;
+    
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-title {
     margin-top: 0;
@@ -254,38 +258,38 @@ body {
     color: var(--title-text-color);
 }
 .team-info {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-text {
     margin-top: 0;
-    margin-bottom: 10px;
 
     color: var(--primary-text-color);
 }
 
 /*---------------PORTFOLIO---------------*/
 .section-portfolio {
-    margin-top: 95px;
-    margin-bottom: 95px;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 .portfolio-list {
     display: flex;
     justify-content: center;
 }
 .portfolio-list .item + .item {
-    margin-left: 30px;  
+    margin-left: 8px;  
 }
 .portfolio-btn {
     padding: 6px 22px;
     margin-top: 0;
-    margin-bottom: 50px;
 
     font-weight: 500;
     line-height: 1.63;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    background: #F5F4FA;
+    background: var(--background-color_2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
 }
 
 .portfolio-btn:hover,
@@ -293,16 +297,26 @@ body {
     color: var(--primary-white-color);
     background: var(--accent-color);
 }
+.portfolio-item {
+    margin-top: 20px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+}
 .portfolio-img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
 }
+
 .portfolio-img > .item {
-    margin-left: 30px;
+    margin-top: 34px;
+    margin-right: 30px;
     margin-bottom: 30px;
-    width:calc((100% - 90px) / 3);
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 .portfolio-title {
     margin-top: 0;
@@ -360,5 +374,5 @@ body {
     color: var(--accent-color);
 }
 .add {
-    color: #ffffff;
+    color: var(--primary-white-color);
 }
