@@ -87,6 +87,7 @@ body {
 .header-nav {
     display: flex;
     align-items: center;
+    border-bottom: 1px #eeeeee solid
 }
 .nav-contact {
     display: flex;
