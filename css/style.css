@@ -197,10 +197,18 @@ body {
 .employment-list {
     display: flex;
 }
-.employment-list > .employment-item + .employment-item {
+.employment-list > .employment-item {
+    width: calc((100% - 60px) / 3);
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-right: 30px;
+}
+.employment-list > .employment-item:nth-child(3n) {
+    margin-right: 0;
+}
+.img {
+    width: 100%;
+    height: auto;
 }
 .employment-title,
 .team-title {
@@ -301,18 +309,19 @@ body {
 .portfolio-img {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
 }
 
 .portfolio-img > .item {
-    margin-bottom: 30px;
+    width: calc((100%-60px) / 3);
     margin-right: 30px;
-    width: calc((100%-60px) / 2) ;
-    justify-content: space-between;
+    margin-bottom: 30px;
 
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--primary-white-color);
+    border: 1px solid var(--primary-white-color);
+}
+.portfolio-img >.item:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 0;
 }
 .portfolio-title {
     margin-top: 0;
