@@ -223,7 +223,6 @@ img {
 .employment-list > .employment-item:nth-child(3n) {
     margin-right: 0;
 }
-
 .employment-title,
 .team-title {
     font-weight: 700;
@@ -310,7 +309,6 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
-
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     color: var(--primary-white-color);
@@ -333,12 +331,12 @@ img {
     margin-bottom: 30px;
 
     background: var(--primary-white-color);
-    border: 1px solid var(--primary-white-color);
+    border: 1px solid #EEEEEE;
 }
 /*-задаємо кожній лівій картинці в рядку 0-ву відстань зправа і знизу (у зв'язці із попереднім кодом)-*/
 .portfolio-img >.item:nth-child(3n) {
     margin-right: 0;
-    margin-bottom: 0;
+    
 }
 .portfolio-title {
     margin-top: 0;
