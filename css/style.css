@@ -13,7 +13,6 @@
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    border-bottom: 1px solid #eeeeee;/*-робимо нижній край контейнера видимим (лінія)-*/
 }
 
 body {
@@ -64,6 +63,9 @@ img {
   }
 
 /*---------------HEADER---------------*/
+.header {
+    border-bottom: 1px solid #eeeeee;/*-робимо нижній край контейнера видимим (лінія)-*/
+}
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -323,7 +325,7 @@ img {
 }
 /*-задаємо всім, крім першим в рядку, елементам відступи праворуч і знизу в 30px-*/
 .portfolio-img > .item {
-    width: calc((100%-60px) / 3);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 
