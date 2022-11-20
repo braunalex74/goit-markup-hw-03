@@ -206,7 +206,8 @@ body {
 .employment-list > .employment-item:nth-child(3n) {
     margin-right: 0;
 }
-.img {
+img {
+    display: block;
     width: 100%;
     height: auto;
 }
